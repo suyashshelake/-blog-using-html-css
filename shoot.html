@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center;">HOPE TRUST LOVE </h2>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="IMG_20180913_154207_HDR.jpg" alt="GANPATI" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="IMG_20180913_173302_337.jpg" alt="GANPATI" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20180913_154207_HDR.jpg" alt="GANPATI" style="width:100%">
+        </div>
+
+
+    </div>
+
+    <div class="column">
+        <img src="IMG_20180915_160305.jpg" alt="GANPATI" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="IMG_20190902_152431_634.jpg" alt="GANPATI" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="IMG_20190903_192943_341.jpg" alt="GANPATI" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="g.jpg" alt="" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="IMG_20190904_235853_260.jpg" alt="GANPATI" style="width:100%">
+    </div>
+    </div>
+
+</body>
+
+</html>

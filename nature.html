@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center;">
+        &quot;My wish is to stay always like this, living quietly in a corner of nature.&quot;</h2>
+
+
+    <div class="row">
+
+        <div class="column">
+            <img src=" IMG_20170925_234933_895.jpg" alt="A" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="20171220_181808-01.jpEg" alt="B" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20180408_221422_799.jpg" alt="C" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20171227_100959.jpg" alt="D" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20171221_131134_181.jpg" alt="E" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20171222_234245_950.jpg" alt="F" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20180307_161658_215.jpg" alt="G" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20171219_121301_638-01.jpeg" alt="A" style="width:75%">
+        </div>
+        <div class="column">
+            <img src="IMG_20170930_122801_348.jpg" alt="A" style="width:100%">
+        </div>
+    </div>
+</body>
+
+</html>

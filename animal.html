@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 500px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 style="text-align:center;"> Life is a game, play it; Life is a challenge, Meet it; Life is an opportunity, Capture it.</h2>
+
+
+    <div class="row">
+        <div class="column">
+            <img src="IMG_20180501_155143_542.jpg" alt="A" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="IMG_20180404_122855_131.jpg" alt="B" style="width:102%">
+        </div>
+        <div class="column">
+            <img src="IMG_20180402_130306_342.jpg" alt="C" style="width:101%">
+        </div>
+    </div>
+    <div class="column">
+        <img src="IMG_20170903_095620342.jpg" alt="D" style="width:75%">
+    </div>
+    <div class="column">
+        <img src="IMG_20180424_161500_770.jpg" alt="E" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="IMG_20190210_111501.jpg" alt="F" style="width:75%">
+    </div>
+
+    </div>
+
+</body>
+
+</html>

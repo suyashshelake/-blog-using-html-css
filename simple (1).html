@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Inovative</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* Style the body */
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        /* Header/logo Title */
+        
+        .header {
+            padding: 70px;
+            text-align: center;
+            background-image: url(6.jpg);
+            background-position: center;
+            background-size: cover;
+            color: rgb(252, 250, 250);
+        }
+        /* Increase the font size of the heading */
+        
+        .header h1 {
+            font-size: 80px;
+        }
+        
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the navigation bar links */
+        
+        .navbar a {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            float: left;
+            display: block;
+            color: white;
+            text-align: right;
+            padding: 14px 0px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(141, 136, 136);
+        }
+        
+        .container {
+            padding: 70px;
+            position: relative;
+            font-family: Arial;
+            background-color: #717171
+        }
+        
+        .slideshow-container {
+            max-width: 600px;
+            position: relative;
+            margin: auto;
+        }
+        
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .text-block {
+            position: absolute;
+            bottom: 300px;
+            right: 200px;
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+            padding-right: 100px;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        /* Clearfix (clear floats) */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        /* Main column */
+        
+        footer {
+            background-color: #717171
+        }
+        
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="navbar">
+        <a class="navbar" href="simple (1).html"> <img src="logo.png" alt="logo"> </a>
+        <a style='font-size:25px' href="https://www.instagram.com/supershelke">
+            <i style="align: center" class="fa fa-instagram"></i></a>
+        <a style='font-size:25px' href="https://www.pinterest.com/de_suyashelke_">
+            <i style="align: center" class="fa fa-pinterest"></i></a>
+    </div>
+    <div class="header">
+        <h1>tHe_URban_NoMaD</h1>
+        <p>Here is a collection of some of my Photos.</p>
+    </div>
+    <div class="container ">
+        <div class="slideshow-container ">
+
+
+            <div class="mySlides fade ">
+                <div class="numbertext ">1 / 3</div>
+                <img src="suyash1.jpg " style="width:100% ">
+                <div class="text ">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade ">
+                <div class="numbertext ">2 / 3</div>
+                <img src="suyash2.jpg " style="width:100% ">
+                <div class="text ">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade ">
+                <div class="numbertext ">3 / 3</div>
+                <img src="suyash3.jpg " style="width:100% ">
+                <div class="text ">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center ">
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides ");
+                var dots = document.getElementsByClassName("dot ");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none ";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active ", " ");
+                }
+                slides[slideIndex - 1].style.display = "block ";
+                dots[slideIndex - 1].className += " active ";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <div class="text-block">
+            <h4>i am Suyash Shelake</h4>
+            <p>"Photos are the return ticket to a moment otherwise gone".</p>
+        </div>
+    </div>
+
+    <h2 style="text-align:center;"><strong> photos that I have clicked</strong></h2>
+    <p style="text-align:center;">click on image to see more photos of that type</p>
+
+
+    <div class="row">
+        <div class="column">
+            <a href="shoot.html">
+                <img src="PicsArt_09-15-09.08.41.jpg" alt="Snow" style="width:80%">
+            </a>
+        </div>
+        <div class="column">
+            <a href="sky.html">
+                <img src="PicsArt_03-20-08.17.19.jpg" alt="Forest" style="width:80%">
+        </div>
+        <div class="column">
+            <a href="animal.html">
+                <img src="PicsArt_05-24-01.30.52.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <a href="food.html">
+                <img src="PicsArt_05-24-07.04.40.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <a href="nature.html">
+                <img src="IMG_20180104_224054_520.jpg" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+            <a href="street.html">
+                <img src="PicsArt_05-28-04.16.541.jpg" alt="Mountains" style="width:80%">
+        </div>
+    </div>
+
+
+
+
+    <div class="footer">
+        <p style="text-align:center;">THANK YOU FOR VISITING</p>
+        <p style="text-align:center;">Contact information: <a href="suyashshelake50@gmail.com">suyashshelake50@gmail.com</a>.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
